@@ -5,6 +5,7 @@ metadata:
 spec:
   targets:
     - ./template-db.yaml
+    - ./template-db-maven.yaml
     - ./template-hw.yaml
     - ./template-psg-synch.yaml
     - ./template-otk.yaml
