@@ -1,16 +1,18 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: bwce-template-db
+  name: bwce-template-db-maven
   title: BWCE Template (DB Table) - Maven Pipeline
   description: Create a new BWCE project with Documentation, that exposes a configured database table.
   tags:
     - tibco
     - bwce
+    - maven
     - postgres
     - database
     - table
     - recommended
+
 spec:
   owner: ACME
   type: integration
