@@ -108,12 +108,12 @@ spec:
         repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
         catalogInfoPath: "/catalog-info.yaml"
 
-#    - id: jenkinsEarBuild
-#      name: Trigger Jenkins EAR Build
-#      action: tibco:jenkins-trigger-ear-build
-#      input:
-#        name: ${{ parameters.name }}
-#        job: Build_BWCE_EAR_DB
+    - id: jenkinsEarBuild
+      name: Trigger Jenkins EAR Build
+      action: tibco:jenkins-trigger-ear-build
+      input:
+        name: ${{ parameters.name }}
+        job: Build_BWCE_EAR_Maven
 
   output:
     links:
@@ -122,6 +122,6 @@ spec:
       - title: Open in catalog
         icon: catalog
         entityRef: ${{ steps.register.output.entityRef }}
-#      - title: Open Jenkins Job
-#        icon: dashboard
-#        url: ${{ steps.jenkinsEarBuild.output.jobLink }}
+      - title: Open Jenkins Job
+        icon: dashboard
+        url: ${{ steps.jenkinsEarBuild.output.jobLink }}
