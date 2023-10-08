@@ -9,5 +9,4 @@ spec:
     - ./template-hw.yaml
     - ./template-psg-synch.yaml
     - ./template-otk.yaml
-    - ./template-new.yaml
     - ./template-data-replication.yaml
