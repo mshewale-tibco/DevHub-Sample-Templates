@@ -64,7 +64,7 @@ spec:
       name: BWCE Skeleton
       action: fetch:template
       input:
-        url: ./skeleton-order-to-kafka-new
+        url: ./skeleton-new
         values:
           name: ${{ parameters.name }}
           description: ${{ parameters.description }}
